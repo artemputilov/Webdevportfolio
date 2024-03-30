@@ -1,0 +1,127 @@
+@import "./var";
+
+
+// Adaptive: 620px
+
+@media (max-width: $breakpoint_sm) {
+    body {
+
+        .nav {
+            .container {
+                .nav-row {
+                    justify-content: space-between;
+
+                    .dark-mode-btn {
+                        order: 0;
+                    }
+                }
+            }
+        }
+
+        .header {
+            min-height: unset;
+
+            .header__wrapper {
+
+                .header__title {
+                    font-size: 30px;
+            
+                    .strong {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    
+        .section {
+            padding: 40px 0;
+        
+            .container {
+                .title-1 {
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+
+                .projects {
+                    justify-content: center;
+
+                    .project {
+                        .project__title {
+                            font-size: 22px;
+                        }
+                    }
+
+                }
+            }
+        
+        }
+    
+
+        .footer {
+            padding: 40px 0 30px;
+            
+            .container {
+                    .footer__wrapper {
+                        row-gap: 20px;
+                        .social {
+                            column-gap: 20px;
+                            .social__item{
+                                width: 28px;
+                            }
+                        }
+                    }
+            }
+
+        }
+    }
+    
+    
+
+}
+
+// Adaptive: 638px
+
+@media (max-width: $breakpoint_sm2) {
+    body {
+        .nav {
+            .container {
+                .nav-row { 
+                    flex-direction: column;
+                     
+                    justify-content: space-between;  
+                    
+                    .logo {
+                        margin-right: 0;
+                    }
+
+                        .dark-mode-btn {
+                           order: 1; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+// Adaptive: 1200px
+
+
+    @media (max-width: $breakpoint_l) {
+        .section {
+        
+        
+            .container {
+               
+
+                .projects {
+                    justify-content: center;
+
+                    .project {
+                        
+                    }
+
+                }
+            }
+        
+        }
+    }

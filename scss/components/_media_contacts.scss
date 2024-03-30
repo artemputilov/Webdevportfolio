@@ -1,0 +1,21 @@
+@media (max-width: $breakpoint_sm) {
+
+    body {
+        .section {
+            .container {
+                .content-block {
+                    .content-list__contacts {
+                        .content-list__item {
+                            .title-4 {
+                                font-size: 20px;
+                                margin-bottom: 10px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

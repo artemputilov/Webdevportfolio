@@ -1,0 +1,61 @@
+@import "./reset";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;500;700&display=swap');
+@import "./components/media_index";
+@import "./components/media_skills";
+@import "./components/media_contacts";
+@import "./components/navigation";
+@import "./components/var";
+@import "./components/var_mode";
+@import "./components/header";
+@import "./components/projects";
+@import "./components/footer";
+@import "./components/skills";
+@import "./components/splider";
+@import "./components/contacts";
+
+
+
+
+// * {
+//     border: 1px solid red;
+// }
+
+html {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    body {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        font-family: "DM Sans", sans-serif;
+        letter-spacing: -0.5px;
+        
+        $page-bg:$white;
+        $text-color:$black;     
+
+        background-color: $page-bg ;
+        color: $text-color;
+        
+
+            .container {
+                padding: 0 15px;
+                margin: 0 auto;
+                max-width: 1200px;
+                
+                }
+    }
+}
+
+.dark {
+    
+    $page-bg:$black;
+    $text-color:$white;     
+
+    background-color: $page-bg ;
+    color: $text-color;
+
+}

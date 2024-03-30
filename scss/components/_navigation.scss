@@ -1,0 +1,108 @@
+@import "./var";
+
+
+    .nav {
+        
+        padding: 20px 0;
+        background-color: $black;
+        color: $header-text;
+        border-bottom: 1px solid $dark-border;
+        letter-spacing: normal;
+
+        
+
+        .nav-row {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            column-gap: 30px;
+            row-gap:20px;
+            flex-wrap: wrap;
+
+        }
+
+        .logo {
+            color: $header-text;
+            font-family: "Poppins", sans-serif;
+            font-size: 24px;
+            margin-right: auto;
+            
+            .strong {
+            font-weight: 700;
+            }
+
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            column-gap: 40px;
+
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        // Dark mode button
+
+        .dark-mode-btn {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 51px;
+            height: 26px;
+            background-color: #272727;
+            border-radius: 50px;
+            padding: 5px;
+
+            order: 9;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: white;
+
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                transition: left 0.2s ease-in;
+            }
+
+            &.dark-mode-btn--active::before {
+                left: 26px;
+            }
+        }
+
+        .dark-mode-btn__icon {
+            position: relative;
+            z-index: 9;
+        }
+
+        .nav-list__link {
+            color: $header-text;
+            transition: opacity 0.2s ease-in;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+       .nav-list__link--active {
+            position: relative;
+
+       }
+
+       .nav-list__link--active::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 100%;
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $accent;
+       }
+    }
+

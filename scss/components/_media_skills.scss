@@ -1,0 +1,19 @@
+@media (max-width: $breakpoint_sm) {
+
+    body {
+        .section {
+            .content-block {
+                .content-list {
+                    .content-list__item {
+                        .title-2 {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
